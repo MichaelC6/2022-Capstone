@@ -4,7 +4,7 @@ import csv
 from pathlib import Path
 
 def load_entities():
-    entities_loc = Path.cwd().parent / "input" / "entities.csv"  # distributed alongside this notebook
+    entities_loc = Path.cwd() / "assets" / "entities.csv"  # distributed alongside this notebook
 
     names = dict()
     descriptions = dict()
