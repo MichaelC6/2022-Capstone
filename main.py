@@ -35,7 +35,7 @@ for cPlanet in planets:
 
 features = df.columns.values.tolist()
 
-print(features)
+#print(features)
 
 important_words.remove(planet)
 nlp = spacy.load("en_core_web_lg")
@@ -52,7 +52,7 @@ for feature in features:
     feature_score.append(word_score.max())
 max_feature = np.argmax(feature_score)
 
-print(feature_score)
+#print(feature_score)
 print("Your question was:")
-print(question)
+#print(question)
 print(f"The feature this most matches is {features[max_feature]}.")

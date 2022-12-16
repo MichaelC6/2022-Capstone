@@ -20,13 +20,13 @@ def extract_important_words(question):
 
     # use NLTK to tag the preprocessed words with their part-of-speech
     tags = nltk.pos_tag(tokens)
-
+    #print(tags)
     # create an empty list to hold the "important" words
     important_words = []
 
     # iterate through the tagged words and identify the "important" ones
     for word, pos in tags:
-        if pos in ["NN", "NNP", "JJ", "RB"]: # nouns and proper nouns are likely to be important
+        if pos in ["NN", "NNP", "JJ", "RB","NNS"]: # nouns and proper nouns are likely to be important
             important_words.append(word)
         elif pos in ["VB", "VBD", "VBG", "VBN", "VBP", "VBZ"]: # verbs are likely to indicate the action being taken
             important_words.append(word)
