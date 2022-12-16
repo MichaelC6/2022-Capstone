@@ -1,3 +1,5 @@
+#This is code I took from a variety of sources that I do not remember, this is not going to be used at the moment
+#But want to keep it there for the process.
 import nltk
 from nltk.corpus import stopwords
 import pandas as pd
@@ -49,5 +51,5 @@ important_words = extract_important_words(question)
 print("Question:", question)
 print("Important words:", important_words)
 
-df = pd.read_csv("assets/planets.csv")
+df = pd.read_csv("../assets/planets.csv")
 print(df)

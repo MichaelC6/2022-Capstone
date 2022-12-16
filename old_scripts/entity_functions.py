@@ -1,5 +1,6 @@
 #This is code to load entities
 #This code is taken from https://github.com/explosion/projects/blob/master/nel-emerson/scripts/notebook_video.ipynb
+#This is useless at the moment as well.
 import csv
 from pathlib import Path
 

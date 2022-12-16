@@ -1,4 +1,5 @@
 #using NLTK library, we can do lot of text preprocesing
+#This is useless at the moment.
 import nltk
 import time
 nltk.download('punkt')
